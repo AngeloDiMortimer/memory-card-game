@@ -1,6 +1,7 @@
 
 import { useEffect, useState } from "react";
 import Loading from "./components/Loading/Loading";
+import { GameContextProvider } from "./context/GameContext";
 
 function App() {
   const [isStarted, setIsStated] = useState(false);
@@ -23,7 +24,9 @@ function App() {
         <Loading />
       ): (
         <div className="content-main">
-          
+          <GameContextProvider>
+            
+          </GameContextProvider>
         </div>
       )}
     </div>
