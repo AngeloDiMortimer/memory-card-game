@@ -4,6 +4,8 @@ import Loading from "./components/Loading/Loading";
 import { GameContextProvider } from "./context/GameContext";
 import StartPage from "./pages/StartPage";
 import GamePage from "./pages/GamePage";
+import InfoGame from "./components/InfoGame/InfoGame";
+import SoundPlay from "./components/SoundPlay/SoundPlay";
 
 function App() {
   const [isStarted, setIsStarted] = useState(false);
@@ -33,6 +35,12 @@ function App() {
               <GamePage started={setIsStarted} />
             )}
           </GameContextProvider>
+
+          {/* Sound on or off */}
+          <SoundPlay />
+
+          {/* Info */}
+          <InfoGame />
         </div>
       )}
     </div>
