@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 import Loading from "./components/Loading/Loading";
 import { GameContextProvider } from "./context/GameContext";
+import StartPage from "./pages/StartPage";
 
 function App() {
   const [isStarted, setIsStated] = useState(false);
@@ -25,7 +26,11 @@ function App() {
       ): (
         <div className="content-main">
           <GameContextProvider>
-            
+            {!isStarted ? (
+              <StartPage handleStartGame={handleStartGame} />
+            ): (
+              <p></p>
+            )}
           </GameContextProvider>
         </div>
       )}
