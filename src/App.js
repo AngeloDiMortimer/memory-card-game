@@ -3,9 +3,10 @@ import { useEffect, useState } from "react";
 import Loading from "./components/Loading/Loading";
 import { GameContextProvider } from "./context/GameContext";
 import StartPage from "./pages/StartPage";
+import GamePage from "./pages/GamePage";
 
 function App() {
-  const [isStarted, setIsStated] = useState(false);
+  const [isStarted, setIsStarted] = useState(false);
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
@@ -16,7 +17,7 @@ function App() {
   }, []);
 
   function handleStartGame() {
-    setIsStated(true);
+    setIsStarted(true);
   }
 
   return (
@@ -29,7 +30,7 @@ function App() {
             {!isStarted ? (
               <StartPage handleStartGame={handleStartGame} />
             ): (
-              <p></p>
+              <GamePage started={setIsStarted} />
             )}
           </GameContextProvider>
         </div>

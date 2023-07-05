@@ -12,7 +12,7 @@ function Modal({ open, content }) {
             <div>
                 {content}
             </div>
-            <Button onclick={resetGame}>Restart</Button>
+            <Button buttonClick={resetGame}>Restart</Button>
         </div>
     )
 }

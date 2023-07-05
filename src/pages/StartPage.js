@@ -15,13 +15,13 @@ function StartPage({ handleStartGame }) {
         <div className="start-page">
             <h1>MEMORY GAME</h1>
             <div className="difficulty">
-                <Button classN="button-easy" onClick={() => handleButton("easy")}>
+                <Button classN="button-easy" buttonClick={() => handleButton("easy")}>
                     Easy
                 </Button>
-                <Button classN="button-medium" onClick={() => handleButton("medium")}>
+                <Button classN="button-medium" buttonClick={() => handleButton("medium")}>
                     Medium
                 </Button>
-                <Button classN="button-hard" onClick={() => handleButton("hard")}>
+                <Button classN="button-hard" buttonClick={() => handleButton("hard")}>
                     Hard
                 </Button>
             </div>

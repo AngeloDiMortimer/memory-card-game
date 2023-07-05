@@ -2,9 +2,9 @@ import React from "react";
 import ReactHowler from "react-howler";
 import backsound from "../../assets/sounds/click.wav";
 
-function Button({ children, classN, onclick}) {
+function Button({ children, classN, buttonClick}) {
     return (
-        <button className={`${classN} button`} onClick={onclick}>
+        <button className={`${classN} button`} onClick={buttonClick}>
             <ReactHowler 
                 src={backsound}
                 preload={false}
