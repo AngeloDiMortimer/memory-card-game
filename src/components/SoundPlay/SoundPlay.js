@@ -17,7 +17,7 @@ function SoundPlay() {
     return (
         <div className="sound">
             <Button classN="info-button sound-button" buttonClick={handleButton}>
-                {icon ? <i className="volume up"></i> : <i className="volume mute"></i>}
+                {icon ? <p className="volume up text-3xl">Sound</p> : <p className="volume mute text-3xl">Mute</p>}
             </Button>
         </div>
     )

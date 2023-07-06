@@ -13,14 +13,14 @@ function InfoGame() {
     };
 
     return (
-        <div className="info">
+        <div className="info text-right">
             {show && (
                 <div className="message-info">
                     <p>Don't click on the same card twice</p>
                 </div> 
             )}
 
-            <Button classN="info-button" buttonClick={handleButton}>
+            <Button classN="info-button text-3xl" buttonClick={handleButton}>
                 {icon}
             </Button>
         </div>

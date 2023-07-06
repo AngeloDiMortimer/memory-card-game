@@ -23,11 +23,11 @@ function App() {
   }
 
   return (
-    <div className="App">
+    <div className="App flex justify-center overflow-hidden min-h-screen p-4">
       {loading ? (
         <Loading />
       ): (
-        <div className="content-main">
+        <div className="content-main flex flex-col justify-between">
           <GameContextProvider>
             {!isStarted ? (
               <StartPage handleStartGame={handleStartGame} />
@@ -35,12 +35,14 @@ function App() {
               <GamePage started={setIsStarted} />
             )}
           </GameContextProvider>
+          <div className="flex items-end justify-between">
+            {/* Sound on or off */}
+            <SoundPlay />
 
-          {/* Sound on or off */}
-          <SoundPlay />
-
-          {/* Info */}
-          <InfoGame />
+            {/* Info */}
+            <InfoGame />
+          </div>
+            
         </div>
       )}
     </div>
