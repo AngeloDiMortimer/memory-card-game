@@ -7,3 +7,71 @@ body {
     background-color: #18181b;
     color: #fafafa;
 }
+
+.card {
+    width: 220px;
+    height: 340px;
+    perspective: 1000px;
+
+}
+
+.card-inner {
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+
+    &.is-flipped {
+        transform: rotateY(180deg);
+    }
+}
+
+.card-face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    overflow: hidden;
+    border-radius: 16px;
+
+    
+    & img {
+        border-radius: 16px;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+.card-face-front {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-face-back {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+ 
+
+    transform: rotateY(180deg);
+}
+
+@media (max-width: 1400px) {
+    .card {
+        width: 200px;
+        height: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 100px;
+        height: 180px;
+    }
+}

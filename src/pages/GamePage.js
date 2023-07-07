@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import GameContext from "../context/GameContext";
+import logo from "../assets/images/logo.webp";
 import Modal from "../components/Modal/Modal";
 import Win from "../components/Win/Win";
 import GameOver from "../components/GameOver/GameOver";
@@ -19,8 +20,8 @@ function GamePage({ started }) {
     };
 
     return (
-        <div className="game-page">
-            <div className="header">
+        <div className="game-page flex flex-col items-center gap-4">
+            <div className="header flex justify-between">
                 <div 
                     className="logo"
                     onClick={() => {
@@ -28,12 +29,16 @@ function GamePage({ started }) {
                         started(false);
                     }}
                 >
-                    <h1>ENA GAME</h1>
+                    <img
+                        className="w-36" 
+                        src={logo}  
+                        alt="Ena Logo"
+                        />
                 </div>
                 <Score />
             </div>
 
-            <div className="game-cards">
+            <div className="game-cards flex flex-col items-center gap-16">
                 <CardList cards={deckOfCards} />
                 <p>
                     {selectedCards.length}/{maxScore}
