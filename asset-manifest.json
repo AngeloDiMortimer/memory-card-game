@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/memory-card-game/static/css/main.be5d9d22.css",
+    "main.js": "/memory-card-game/static/js/main.89ac1f34.js",
+    "static/media/click.wav": "/memory-card-game/static/media/click.e79ab80ddf8414d7ecc4.wav",
+    "static/media/logo.webp": "/memory-card-game/static/media/logo.3b69f0a22b477ba37c03.webp",
+    "static/media/mistery_woman.webp": "/memory-card-game/static/media/mistery_woman.f709987c38ddf478256f.webp",
+    "static/media/Merchant.webp": "/memory-card-game/static/media/Merchant.6286f615a35a7243d87d.webp",
+    "static/media/Ulysses.webp": "/memory-card-game/static/media/Ulysses.192b5f3c70470203372c.webp",
+    "static/media/The_Shepherd.webp": "/memory-card-game/static/media/The_Shepherd.5c5a96745961dfd1b752.webp",
+    "static/media/CoralGlasses.webp": "/memory-card-game/static/media/CoralGlasses.31ce1e0c76b855a5901e.webp",
+    "static/media/ena.webp": "/memory-card-game/static/media/ena.77a1a1b8a34340df1cd8.webp",
+    "static/media/moony.webp": "/memory-card-game/static/media/moony.99cda2ed20d32b5fd7f9.webp",
+    "static/media/froggy.webp": "/memory-card-game/static/media/froggy.104e418ec3007fd6b921.webp",
+    "static/media/hourglass_dog.webp": "/memory-card-game/static/media/hourglass_dog.6d3bc340b7d920c01d6f.webp",
+    "static/media/ena_bbq.webp": "/memory-card-game/static/media/ena_bbq.cd54228333c1a483beb6.webp",
+    "index.html": "/memory-card-game/index.html",
+    "main.be5d9d22.css.map": "/memory-card-game/static/css/main.be5d9d22.css.map",
+    "main.89ac1f34.js.map": "/memory-card-game/static/js/main.89ac1f34.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.be5d9d22.css",
+    "static/js/main.89ac1f34.js"
+  ]
+}
