@@ -8,7 +8,7 @@ function Modal({ open, content }) {
     if(!open) return null;
 
     return (
-        <div className="modal-container">
+        <div className="modal-container text-5xl">
             <div>
                 {content}
             </div>

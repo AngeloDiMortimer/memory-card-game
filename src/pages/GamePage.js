@@ -20,7 +20,7 @@ function GamePage({ started }) {
     };
 
     return (
-        <div className="game-page flex flex-col items-center gap-4">
+        <div className="game-page flex flex-col gap-4">
             <div className="header flex justify-between">
                 <div 
                     className="logo"
@@ -30,7 +30,7 @@ function GamePage({ started }) {
                     }}
                 >
                     <img
-                        className="w-36" 
+                        className="w-36 md:w-52" 
                         src={logo}  
                         alt="Ena Logo"
                         />
@@ -38,7 +38,7 @@ function GamePage({ started }) {
                 <Score />
             </div>
 
-            <div className="game-cards flex flex-col items-center gap-16">
+            <div className="game-cards flex flex-col items-center gap-16 md:text-2xl">
                 <CardList cards={deckOfCards} />
                 <p>
                     {selectedCards.length}/{maxScore}

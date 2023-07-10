@@ -15,7 +15,7 @@ function InfoGame() {
     return (
         <div className="info text-right">
             {show && (
-                <div className="message-info">
+                <div className="message-info md:text-2xl">
                     <p>Don't click on the same card twice</p>
                 </div> 
             )}
